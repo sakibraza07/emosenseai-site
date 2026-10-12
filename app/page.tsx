@@ -4,7 +4,6 @@ import {
   BrainCircuit,
   Check,
   ChevronRight,
-  CircleUserRound,
   GitBranch,
   History,
   Mic2,
@@ -68,7 +67,7 @@ export default function Page() {
             <Sparkles className="text-[#b8ff74]" aria-hidden="true" /> Speech intelligence, made human
           </div>
           <h1 className="max-w-3xl text-5xl font-medium leading-[0.98] tracking-[-0.065em] sm:text-7xl lg:text-[88px]">Hear what words <span className="text-[#b8ff74]">can&apos;t say.</span></h1>
-          <p className="mt-8 max-w-lg text-base leading-7 text-white/55 sm:text-lg">EmoSenseAI turns speech into insight. Detect emotion in real time with a deep learning pipeline built to understand the voice behind the words.</p>
+          <p className="mt-8 max-w-lg text-base leading-7 text-white/55 sm:text-lg">EmoSenseAI turns speech into insight. Detect emotion from a recording or an upload with a deep learning pipeline built to understand the voice behind the words.</p>
           <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <a href="https://emosense-ai-wscy.onrender.com/" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-3 rounded-full bg-[#b8ff74] px-5 py-3.5 text-sm font-semibold text-[#0d1508] transition hover:bg-[#c9ff98]">
               Try live demo <ArrowUpRight className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
@@ -81,12 +80,11 @@ export default function Page() {
           <div className="absolute -inset-10 rounded-full bg-[#b8ff74]/[0.07] blur-3xl" />
           <div className="relative rounded-[2rem] border border-white/10 bg-white/[0.045] p-3 shadow-2xl shadow-black/40 backdrop-blur-sm">
             <div className="rounded-[1.55rem] border border-white/10 bg-[#101219] p-6 sm:p-8">
-              <div className="flex items-center justify-between"><div className="flex items-center gap-2 text-xs text-white/50"><span className="size-2 rounded-full bg-[#b8ff74]" /> LIVE ANALYSIS</div><span className="rounded-full bg-white/[0.06] px-2.5 py-1 text-[10px] text-white/40">SESSION 04</span></div>
+              <div className="flex items-center justify-between"><div className="flex items-center gap-2 text-xs text-white/50"><span className="size-2 rounded-full bg-[#b8ff74]" /> SAMPLE OUTPUT (ILLUSTRATIVE)</div></div>
               <div className="flex h-48 items-center justify-center py-6"><div className="flex w-full items-center justify-center gap-1.5">{Array.from({ length: 38 }).map((_, i) => <span key={i} className="w-1 rounded-full bg-[#b8ff74] opacity-80" style={{ height: `${18 + Math.sin(i * 1.9) * 19 + (i % 5) * 5}px` }} />)}</div></div>
-              <div className="border-t border-white/10 pt-6"><p className="text-xs text-white/40">DETECTED EMOTION</p><div className="mt-2 flex items-end justify-between"><h2 className="text-4xl tracking-[-0.05em]">Confident</h2><span className="text-sm text-[#b8ff74]">91.4%</span></div><div className="mt-5 h-1.5 overflow-hidden rounded-full bg-white/10"><div className="h-full w-[91.4%] rounded-full bg-[#b8ff74]" /></div></div>
+              <div className="border-t border-white/10 pt-6"><p className="text-xs text-white/40">DETECTED EMOTION</p><div className="mt-2"><h2 className="text-4xl tracking-[-0.05em]">Happy</h2></div></div>
             </div>
           </div>
-          <div className="absolute -bottom-5 -left-5 flex items-center gap-3 rounded-2xl border border-white/10 bg-[#14161d] px-4 py-3 shadow-xl sm:-left-10"><span className="flex size-9 items-center justify-center rounded-xl bg-[#b8ff74]/10 text-[#b8ff74]"><CircleUserRound aria-hidden="true" /></span><div><p className="text-[10px] text-white/35">SIGNAL QUALITY</p><p className="text-xs text-white/80">Excellent · 98%</p></div></div>
         </div>
       </section>
 
